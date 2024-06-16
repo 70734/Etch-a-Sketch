@@ -4,11 +4,13 @@ body {
     align-items: center;
     height: 100vh;
     background-color: purple;
+    flex-direction: column;
 }
 
 .sketch-container {
     display: flex;
-    border: 3px solid black;
+    border: 3px solid rgb(160, 0, 252);
+    box-shadow: 0.3em 0.3em 0.3em rgb(255, 0, 136);
     flex-direction: column;
     min-width:75vh;
     min-height: 75vh;
@@ -23,6 +25,11 @@ body {
 
 .block {
     flex: auto;
-    border: 1px solid black;
     background-color: white;
+}
+
+h1 {
+    font-family: "Brush-Script";
+    color: pink;
+    font-size: 36px;
 }

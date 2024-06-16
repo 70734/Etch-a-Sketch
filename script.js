@@ -1,5 +1,11 @@
 let sketchContainer = document.querySelector('.sketch-container');
 let blockSize = 16;
+let color = 'pink';
+
+function drawOnSketch(block){
+    block.style.backgroundColor = color;
+}
+
 
 // create sketch box based on blockSize
 function createSketchBox(){
@@ -14,6 +20,9 @@ function createSketchBox(){
                 let block = document.createElement('div');
                 blockRow.appendChild(block);
                 block.classList.toggle('block');
+                block.addEventListener('mouseover', () => drawOnSketch(block));
             }
     }
 }
+
+createSketchBox();
